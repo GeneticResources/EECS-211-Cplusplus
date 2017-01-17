@@ -15,7 +15,8 @@ int main() {
   cin >> a >> b >> c >> d >> e >> f;
 
   double x, y;
-
+  
+  // Check if ae - db does not equal 0
   if((a * e) - (d * b) != 0)
   {
       if(abs(a) <= 10000 && abs(b) <= 10000 && abs(c) <= 10000 && abs(d) <= 10000 && abs        (e) <= 10000 && abs(f) <= 10000)
@@ -33,6 +34,7 @@ int main() {
     return 0;
   }
 
+  // Output
   cout << x << '\n';
   cout << y << '\n';
 
