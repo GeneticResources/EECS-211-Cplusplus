@@ -32,9 +32,12 @@ bool is_prime(int p)
 	numIsPrime = false;
     }
 
+    // Break if the number is not a prime
     if(!numIsPrime)
       break;
   }
+
+  // Takes into account outlyers 2 and 3 (sqrt is smaller than 1)
   if(p == 2 || p == 3)
     return true;
   return numIsPrime;
@@ -45,11 +48,14 @@ int main()
   int n;
   cout << "Enter an integer: ";
   cin >> n;
+
+  // Check contraints
   if(n < 2 || n > 300000) {
     cout << "Enter an integer between 2 and 30000.";
     return 0;
   }
 
+  // Run through every number from 2 up to that number
   for(int i = 2; i < n; i++) {
     if(is_prime(i))
       cout << i << '\n';

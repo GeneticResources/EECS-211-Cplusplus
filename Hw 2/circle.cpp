@@ -14,7 +14,7 @@ struct Circle
 Circle read_circle()
 {
   cout << "Enter in the (x, y) coordinates and radius: ";
-
+  
   Circle circ;
   cin >> circ.x >> circ.y >> circ.radius;
   
@@ -38,6 +38,7 @@ int main() {
   Circle c1 = read_circle();
   string output = "";
 
+  // Infinite loop until the last value is negative
   while(true) {
     if(cin.get() == '\n') {
       Circle cNext = read_circle();
@@ -45,7 +46,7 @@ int main() {
       if(cNext.radius < 0)
         break;
       
-      // If the circles aren't overlapping
+      // Check if circles are overlapping
       if(!overlapped(c1, cNext))
 	output = output + "not overlapped\n";
       else
