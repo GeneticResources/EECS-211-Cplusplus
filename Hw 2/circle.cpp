@@ -13,8 +13,6 @@ struct Circle
 // Reads a circle from cin and returns it.
 Circle read_circle()
 {
-  cout << "Enter in the (x, y) coordinates and radius: ";
-  
   Circle circ;
   cin >> circ.x >> circ.y >> circ.radius;
   
@@ -34,7 +32,7 @@ bool overlapped(Circle C1, Circle C2)
 }
 
 int main() {
-
+  
   Circle c1 = read_circle();
   string output = "";
 
