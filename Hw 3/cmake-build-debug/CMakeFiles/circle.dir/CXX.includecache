@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/circle.cpp
+circle_lib.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/circle_lib.h
+iostream
+-
+vector
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/circle_lib.cpp
+circle_lib.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/circle_lib.h
+iostream
+-
+stdexcept
+-
+cmath
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/circle_lib.h
+

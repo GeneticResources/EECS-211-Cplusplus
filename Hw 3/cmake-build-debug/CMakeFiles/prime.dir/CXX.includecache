@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/prime.cpp
+prime_lib.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/prime_lib.h
+iostream
+-
+vector
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/prime_lib.cpp
+prime_lib.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/prime_lib.h
+stdexcept
+-
+vector
+-
+cmath
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 3/prime_lib.h
+vector
+-
+
