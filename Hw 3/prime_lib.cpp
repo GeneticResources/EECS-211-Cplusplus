@@ -11,7 +11,7 @@ bool is_prime(int p)
     if(p < 1)
         throw runtime_error("A negative integer or zero was entered.");
 
-    int sqroot = floor(sqrt(p));
+    int sqroot = sqrt(p);
     bool isPrime = false;
     bool numIsPrime = false;
 
