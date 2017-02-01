@@ -37,7 +37,6 @@ bool compareLists(List& list1, List& list2) {
     return false;
 }
 
-// Does not work -> changes value of front
 void filter_lt(List& front, int limit)
 {
     List ptrHolder = nullptr;

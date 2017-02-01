@@ -12,6 +12,7 @@ TEST(PUSH_BACK) {
   // Define pointers to linked lists
   List testList = cons(4,cons(6, nullptr));
   List testList2 = cons(1, nullptr);
+
   List expected = cons(4,cons(6,cons(100, nullptr)));
   List expected2 = cons(1,cons(2, nullptr));
 
@@ -57,7 +58,7 @@ TEST(POP_FRONT) {
   CHECK_THROW(pop_front(empty), runtime_error);
 
   // Define pointers
-  List param = make_shared<ListNode>(ListNode{8, make_shared<ListNode>(ListNode{5, nullptr})});
+  List param = cons(8,cons(5, nullptr));
   List testList = pop_front(param);
   List expected = make_shared<ListNode>(ListNode{8, nullptr});
 
