@@ -32,17 +32,23 @@ TEST(FILTERLT) {
   // Define pointers
   List testList = cons(4,cons(6,cons(7,cons(-4, nullptr))));
   List testList2 = cons(1,cons(10,cons(3,cons(6, nullptr))));
+  List testList3 = cons(10,cons(5,cons(8, nullptr)));
+
   List expected = cons(4,cons(-4, nullptr));
   List expected2 = cons(1,cons(3, nullptr));
+  List expected3 = cons(5, nullptr);
 
   filter_lt(testList,6);
   filter_lt(testList2,5);
+  filter_lt(testList3,7);
 
   bool test = compareLists(testList, expected);
   bool test2 = compareLists(testList2, expected2);
+  bool test3 = compareLists(testList3, expected3);
 
   CHECK_EQUAL(true, test);
   CHECK_EQUAL(true, test2);
+  CHECK_EQUAL(true, test3);
 }
 
 // Tests for pop_front function
