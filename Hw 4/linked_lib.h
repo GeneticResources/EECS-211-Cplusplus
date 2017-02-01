@@ -16,6 +16,7 @@ inline List cons(const int data, const List& next)
 }
 
 int lengths(List list);
+ListNode value(List& list);
 bool compareLists(List& list1, List& list2);
 void filter_lt(List& front, int limit);
 void push_back(List& front, int data);

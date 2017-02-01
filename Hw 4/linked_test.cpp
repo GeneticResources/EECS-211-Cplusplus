@@ -31,7 +31,7 @@ TEST(PUSH_BACK) {
 TEST(FILTERLT) {
   // Define pointers
   List testList = cons(4,cons(6,cons(7,cons(-4, nullptr))));
-  List testList2 = cons(1,cons(10,cons(3, nullptr)));
+  List testList2 = cons(1,cons(10,cons(3,cons(6, nullptr))));
   List expected = cons(4,cons(-4, nullptr));
   List expected2 = cons(1,cons(3, nullptr));
 

@@ -16,6 +16,11 @@ int lengths(List list) {
     return length;
 }
 
+// Get values of pointers
+ListNode value(List& list) {
+    return *list;
+}
+
 // Compare whether pointer values (structs) are equal
 bool compareLists(List& list1, List& list2) {
 
@@ -35,12 +40,19 @@ bool compareLists(List& list1, List& list2) {
 // Does not work -> changes value of front
 void filter_lt(List& front, int limit)
 {
+    List ptrHolder = nullptr;
+    vector<List> listVec;
+
+    if(lengths(front) == 0)
+        return;
+
+    // Store Lists that have data values less than limit into a new List
+    // Use push_back to store
     for(List curr = front; curr != nullptr; curr = curr->next) {
-        // Remove
-        if(curr->data >= limit) {
-            front->next = curr->next;
-        }
+        if(curr->data < limit)
+            push_back(ptrHolder, curr->data);
     }
+    front = ptrHolder;
 }
 
 void push_back(List& front, int data)
@@ -49,22 +61,11 @@ void push_back(List& front, int data)
     List lst = front;
 
     if(lst == nullptr)
-        lst = newList;
+        front = newList;
     else {
         while(lst->next != nullptr) lst = lst->next;
         lst->next = newList;
     }
-
- /*   if(front == nullptr)
-        front = newList;
-    else {
-        while(front->next != nullptr) front = front->next;
-        front->next = newList;
-    }
-
-    for(List curr = front; curr != nullptr; curr = curr->next) {
-        cout << curr->data << '\n';
-    }*/
 }
 
 List pop_front(List& front)
