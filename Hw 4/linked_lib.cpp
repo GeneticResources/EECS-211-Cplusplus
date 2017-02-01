@@ -16,11 +16,6 @@ int lengths(List list) {
     return length;
 }
 
-// Get values of pointers
-ListNode value(List& list) {
-    return *list;
-}
-
 // Compare whether pointer values (structs) are equal
 bool compareLists(List& list1, List& list2) {
 
