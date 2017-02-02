@@ -30,7 +30,6 @@ TEST(PUSH_BACK) {
 
 // Test for filter_lt function
 TEST(FILTERLT) {
-  // Define pointers
   List testList = cons(4,cons(6,cons(7,cons(-4, nullptr))));
   List testList2 = cons(1,cons(10,cons(3,cons(6, nullptr))));
   List testList3 = cons(10,cons(5,cons(8, nullptr)));
@@ -57,12 +56,10 @@ TEST(POP_FRONT) {
   List empty = nullptr;
   CHECK_THROW(pop_front(empty), runtime_error);
 
-  // Define pointers
   List param = cons(8,cons(5, nullptr));
   List testList = pop_front(param);
   List expected = make_shared<ListNode>(ListNode{8, nullptr});
 
-  // Test
   bool test = compareLists(testList, expected);
   CHECK_EQUAL(true, test);
 }
@@ -88,10 +85,8 @@ TEST(PUSH_BACK_OF_ONE_ELEMENT) {
 }
 
 TEST(NTH_ELEMENT) {
-  // Define pointer
   List testList = cons(4,cons(6,cons(8,cons(10, nullptr))));
 
-  // Test
   CHECK_THROW(nth_element(testList, 4), runtime_error);
   CHECK_EQUAL(8, nth_element(testList,2));
   CHECK_EQUAL(10,nth_element(testList,3));
