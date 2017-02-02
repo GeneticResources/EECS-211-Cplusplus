@@ -32,6 +32,7 @@ bool compareLists(List& list1, List& list2) {
     return false;
 }
 
+// Filters out nodes with data greater than or equal to limit
 void filter_lt(List& front, int limit)
 {
     List ptrHolder = nullptr;
@@ -47,6 +48,7 @@ void filter_lt(List& front, int limit)
         front = ptrHolder;
 }
 
+// Adds a node to the end of the linked list
 void push_back(List& front, int data)
 {
     List newList = make_shared<ListNode>(ListNode{data, nullptr});
@@ -60,6 +62,7 @@ void push_back(List& front, int data)
     }
 }
 
+// Removes the first node of the linked list
 List pop_front(List& front)
 {
     if(front == nullptr)
@@ -69,6 +72,7 @@ List pop_front(List& front)
     return front;
 }
 
+// Returns the data of the n+1th node
 int& nth_element(List& front, size_t n)
 {
     size_t count = 0;
