@@ -59,9 +59,13 @@ TEST(POP_FRONT) {
   List param = cons(8,cons(5, nullptr));
   List testList = pop_front(param);
   List expected = make_shared<ListNode>(ListNode{8, nullptr});
+  List expected2 = cons(5, nullptr);
 
   bool test = compareLists(testList, expected);
+  bool test2 = compareLists(param, expected2);
+
   CHECK_EQUAL(true, test);
+  CHECK_EQUAL(true, test2);
 }
 
 // Example test case for push_back
