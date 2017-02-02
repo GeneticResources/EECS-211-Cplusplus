@@ -72,14 +72,13 @@ List pop_front(List& front)
 int& nth_element(List& front, size_t n)
 {
     size_t count = 0;
-    int length = 0;
-    for(List curr = front; curr != nullptr; curr = curr->next) {
-        length++;
 
+    if(n >= lengths(front))
+        throw runtime_error("N is out of bounds.");
+
+    for(List curr = front; curr != nullptr; curr = curr->next) {
         if (count == n)
             return curr->data;
         count++;
     }
-    if(n >= length)
-        throw runtime_error("N is out of bounds.");
 }
