@@ -37,16 +37,14 @@ void filter_lt(List& front, int limit)
     List ptrHolder = nullptr;
     vector<List> listVec;
 
-    if(lengths(front) == 0)
-        return;
-
     // Store Lists that have data values less than limit into a new List
     // Use push_back to store
     for(List curr = front; curr != nullptr; curr = curr->next) {
         if(curr->data < limit)
             push_back(ptrHolder, curr->data);
     }
-    front = ptrHolder;
+    if(front != nullptr)
+        front = ptrHolder;
 }
 
 void push_back(List& front, int data)

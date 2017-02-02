@@ -11,10 +11,10 @@ using namespace std;
 TEST(PUSH_BACK) {
   // Define pointers to linked lists
   List testList = cons(4,cons(6, nullptr));
-  List testList2 = cons(1, nullptr);
+  List testList2 = nullptr;
 
   List expected = cons(4,cons(6,cons(100, nullptr)));
-  List expected2 = cons(1,cons(2, nullptr));
+  List expected2 = cons(2, nullptr);
 
   push_back(testList,100);
   push_back(testList2, 2);
