@@ -65,12 +65,13 @@ void push_back(List& front, int data)
 // Removes the first node of the linked list
 List pop_front(List& front)
 {
-    List front2 = front;
     if(front == nullptr)
         throw runtime_error("Inputted linked list is a null pointer.");
 
+    List front2 = front;
     front = front->next;
-    return cons(front2->data, nullptr);//cons(data, nullptr);
+
+    return cons(front2->data, nullptr);
 }
 
 // Returns the data of the n+1th node
