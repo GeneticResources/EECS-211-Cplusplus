@@ -36,7 +36,6 @@ bool compareLists(List& list1, List& list2) {
 void filter_lt(List& front, int limit)
 {
     List ptrHolder = nullptr;
-    vector<List> listVec;
 
     // Store Lists that have data values less than limit into a new List
     // Use push_back to store
