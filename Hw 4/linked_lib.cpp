@@ -36,14 +36,17 @@ bool compareLists(List& list1, List& list2) {
 void filter_lt(List& front, int limit)
 {
     List ptrHolder = nullptr;
+    bool match = false;
 
     // Store Lists that have data values less than limit into a new List
     // Use push_back to store
     for(List curr = front; curr != nullptr; curr = curr->next) {
-        if(curr->data < limit)
+        if(curr->data < limit) {
             push_back(ptrHolder, curr->data);
+            match = true;
+        }
     }
-    if(front != nullptr)
+    if(front != nullptr && match)
         front = ptrHolder;
 }
 
