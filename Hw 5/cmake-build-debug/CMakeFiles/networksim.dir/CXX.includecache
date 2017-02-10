@@ -1,0 +1,114 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/datagram.cpp
+datagram.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/datagram.h
+parsing.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/parsing.h
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/errors.h
+cstdlib
+-
+iostream
+-
+string
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/datagram.h
+array
+-
+string
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/errors.cpp
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/errors.h
+string
+-
+iostream
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/errors.h
+string
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/interface.cpp
+interface.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/interface.h
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/errors.h
+system.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/system.h
+string
+-
+vector
+-
+iostream
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/interface.h
+system.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/system.h
+string
+-
+vector
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/main.cpp
+interface.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/interface.h
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/errors.h
+parsing.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/parsing.h
+system.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/system.h
+iostream
+-
+string
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/parsing.cpp
+parsing.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/parsing.h
+interface.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/interface.h
+iostream
+-
+string
+-
+vector
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/parsing.h
+interface.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/interface.h
+string
+-
+vector
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/system.cpp
+system.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/system.h
+string
+-
+vector
+-
+iostream
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/system.h
+datagram.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 5/datagram.h
+string
+-
+vector
+-
+
