@@ -14,6 +14,7 @@ IP_address parse_IP(string s)
     int lastStartIndex = 0;
     int index = 0;
     array<int, 4> nums = {};
+    int countDots = 0;
 
     // Check errors
     for(int i = 0; i < s.length(); ++i) {
@@ -28,6 +29,7 @@ IP_address parse_IP(string s)
         if(s.at(i) == '.') {
             stringNum = s.substr(lastStartIndex, i - lastStartIndex);
             lastStartIndex = i + 1;
+            ++countDots;
 
             // Error checking
             if(parse_int(stringNum) < 0 || parse_int(stringNum) > 255)
@@ -38,10 +40,17 @@ IP_address parse_IP(string s)
         }
         if(index == 3) {
             stringNum = s.substr(lastStartIndex, s.length());
+
+            if(stringNum.length() > 3)
+                throw runtime_error("String does not follow specifications.");
+
             nums[index] = parse_int(stringNum);
             break;
         }
     }
+
+    if(countDots == 0 && s.length() != 0)
+        throw runtime_error("String does not follow specifications.");
 
     return nums;
 }

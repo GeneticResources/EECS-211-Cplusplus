@@ -26,7 +26,8 @@ TEST(PARSE_IP_ERROR) {
     CHECK_THROW(parse_IP("127.0. .1"), runtime_error);
     CHECK_THROW(parse_IP("-127.0.0.1"), runtime_error);
     CHECK_THROW(parse_IP("260.0.0.2"), runtime_error);
-    //CHECK_THROW(parse_IP("48320492"), runtime_error);
+    CHECK_THROW(parse_IP("48320492"), runtime_error);
+    CHECK_THROW(parse_IP("129.39.28.23.140"), runtime_error);
 }
 // Unit tests for all three functions
 TEST(PARSE_IP) {
