@@ -14,6 +14,9 @@ int parse_int(const string& s) {
     int result = 0;
     bool firstNotZero = false;
 
+    if(s.length() == 0)
+        throw runtime_error("Input string is empty.");
+
     // Create a vector of digits in the given string
     for(int i = 0; i < s.length(); ++i) {
 
@@ -45,13 +48,13 @@ vector<string> tokenize(const string& line)
     int quoteCount = 0;
 
     // Create a vector of line's characters
-    vector<string> characters, tokens;
+    vector<string> characters = {}, tokens = {};
     for(int i = 0; i < line.length(); ++i) {
         characters.push_back(line.substr(i, 1));
     }
 
     while(true) {
-        // Break when out of bounds
+        // Break when out of bounds or when empty
         if(index == line.length())
             break;
 
