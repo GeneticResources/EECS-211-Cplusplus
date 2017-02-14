@@ -22,7 +22,7 @@ IP_address parse_IP(string s)
 
         // If not between 0-9 and is not a period
         if(!(ascii >= 48 && ascii <= 57) && ascii != 46)
-            throw runtime_error("String does not follow specifications.");
+            throw err_code::bad_ip_address;
     }
 
     for(int i = 0; i < s.length(); ++i) {
@@ -31,9 +31,9 @@ IP_address parse_IP(string s)
             lastStartIndex = i + 1;
             ++countDots;
 
-            // Error checking
+            // Error checking for between 0 and 255
             if(parse_int(stringNum) < 0 || parse_int(stringNum) > 255)
-                throw runtime_error("Numbers cannot be less than 0 or greator than 255");
+                throw err_code::bad_ip_address;
 
             nums[index] = parse_int(stringNum);
             ++index;
@@ -42,15 +42,15 @@ IP_address parse_IP(string s)
             stringNum = s.substr(lastStartIndex, s.length());
 
             if(stringNum.length() > 3)
-                throw runtime_error("String does not follow specifications.");
+                throw err_code::bad_ip_address;
 
             nums[index] = parse_int(stringNum);
             break;
         }
     }
 
-    if(countDots == 0 && s.length() != 0)
-        throw runtime_error("String does not follow specifications.");
+    if(countDots != 3 && s.length() != 0)
+        throw err_code::bad_ip_address;
 
     return nums;
 }

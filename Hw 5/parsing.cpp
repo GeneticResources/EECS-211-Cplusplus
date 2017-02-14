@@ -45,7 +45,7 @@ vector<string> tokenize(const string& line)
     int index = 0;
     string str = "";
     bool search = false;
-    int quoteCount = 0;
+    int quoteCount = 0, spaceCount = 0;
 
     // Create a vector of line's characters
     vector<string> characters = {}, tokens = {};
@@ -55,7 +55,7 @@ vector<string> tokenize(const string& line)
 
     while(true) {
         // Break when out of bounds or when empty
-        if(index == line.length())
+        if(index >= line.length())
             break;
 
         // If there's a quote, run through until another quote is found
@@ -75,22 +75,28 @@ vector<string> tokenize(const string& line)
             search = true;
 
             while(characters[index] != " " && characters[index] != "\"") {
+                if(index == line.length())
+                    break;
                 str += characters[index];
                 ++index;
             }
+
             if(characters[index] == "\"")
                 ++quoteCount;
+            if(characters[index] == " ")
+                ++spaceCount;
         }
 
         if(search)
             tokens.push_back(str);
 
-        if(quoteCount % 2 != 0)
-            throw runtime_error("Double quotes are not paired.");
-
         search = false;
         str = "";
         ++index;
     }
+
+    if(quoteCount % 2 != 0 && quoteCount != 0)
+        throw runtime_error("Double quotes are not paired.");
+
     return tokens;
 }
