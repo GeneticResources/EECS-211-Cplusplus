@@ -17,6 +17,8 @@ IP_address parse_IP(string s)
     int countDots = 0;
 
     // Check errors
+    if(s.length() == 0)
+        throw err_code::bad_ip_address;
     for(int i = 0; i < s.length(); ++i) {
         int ascii = (int) s.at(i);
 
@@ -30,6 +32,12 @@ IP_address parse_IP(string s)
             stringNum = s.substr(lastStartIndex, i - lastStartIndex);
             lastStartIndex = i + 1;
             ++countDots;
+
+            try {
+                parse_int(stringNum);
+            } catch (runtime_error) {
+                throw err_code::bad_ip_address;
+            }
 
             // Error checking for between 0 and 255
             if(parse_int(stringNum) < 0 || parse_int(stringNum) > 255)
@@ -49,6 +57,7 @@ IP_address parse_IP(string s)
         }
     }
 
+    // Error checking
     if(countDots != 3 && s.length() != 0)
         throw err_code::bad_ip_address;
 

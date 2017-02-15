@@ -37,22 +37,24 @@ TEST(PARSE_INT_ERROR) {
     CHECK_THROW(parse_int(""), runtime_error);
 }
 TEST(PARSE_IP_ERROR) {
-    // throw err code:: bad ip address
     CHECK_THROW_ENUM(parse_IP("127&&&01"), err_code, bad_ip_address);
     CHECK_THROW_ENUM(parse_IP("127.0. .1"), err_code, bad_ip_address);
     CHECK_THROW_ENUM(parse_IP("-127.0.0.1"), err_code, bad_ip_address);
     CHECK_THROW_ENUM(parse_IP("260.0.0.2"), err_code, bad_ip_address);
     CHECK_THROW_ENUM(parse_IP("48320492"), err_code, bad_ip_address);
     CHECK_THROW_ENUM(parse_IP("129.39.28.23.140"), err_code, bad_ip_address);
+    CHECK_THROW_ENUM(parse_IP(""), err_code, bad_ip_address);
 }
 // Unit tests for all three functions
 TEST(PARSE_IP) {
     array<int, 4> test = parse_IP("127.0.0.1");
+    array<int, 4> test3 = parse_IP("255.255.255.255");
+
     array<int, 4> expected = {127, 0, 0, 1};
-    array<int, 4> test2 = parse_IP("");
+    array<int, 4> expected3 = {255, 255, 255, 255};
 
     bool bool1 = true;
-    bool bool2 = true;
+    bool bool3 = true;
 
     // Check equal arrays
     for(int i = 0; i < test.size(); ++i) {
@@ -61,16 +63,15 @@ TEST(PARSE_IP) {
             break;
         }
     }
-
-    for(int i = 0; i < test2.size(); ++i) {
-        if(test2[i] != 0) {
-            bool2 = false;
+    for(int i = 0; i < test3.size(); ++i) {
+        if (test3[i] != expected3[i]) {
+            bool1 = false;
             break;
         }
     }
 
     CHECK_EQUAL(true, bool1);
-    CHECK_EQUAL(true, bool2);
+    CHECK_EQUAL(true, bool3);
 }
 TEST(TOKENIZE) {
     vector<string> test1 = tokenize("");
@@ -81,6 +82,7 @@ TEST(TOKENIZE) {
     vector<string> test6 = tokenize("hello hi");
     vector<string> test7 = tokenize("  -   ");
     vector<string> test8 = tokenize(" \"     \"     \"  \"");
+    vector<string> test9 = tokenize("");
 
     vector<string> expected2 {"de@f.com", "ghi j-k ", "w", "==", "z"};
     vector<string> expected3 {"hello"};
@@ -164,6 +166,7 @@ TEST(TOKENIZE) {
     CHECK_EQUAL(true, bool6);
     CHECK_EQUAL(true, bool7);
     CHECK_EQUAL(true, bool8);
+    CHECK_EQUAL(true, test9.size() == 0);
 }
 TEST(PARSE_INT) {
     CHECK_EQUAL(10, parse_int("10"));

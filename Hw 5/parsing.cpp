@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// Convert a string to an int
 int parse_int(const string& s) {
     vector<int> digits;
     int num;
@@ -40,6 +41,7 @@ int parse_int(const string& s) {
     return result;
 }
 
+// Tokenize a string
 vector<string> tokenize(const string& line)
 {
     int index = 0;
