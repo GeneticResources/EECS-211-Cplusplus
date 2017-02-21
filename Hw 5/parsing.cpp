@@ -66,11 +66,15 @@ vector<string> tokenize(const string& line)
             search = true;
             ++quoteCount;
 
-            while(characters[index] != "\"") {
+            while(characters[index] != "\"" ) {
+                if(index >= line.length())
+                    throw runtime_error("Unbalanced quotes");
+
                 str += characters[index];
                 ++index;
             }
-            ++quoteCount;
+            if(characters[index] == "\"" && index < line.length())
+                ++quoteCount;
         }
         // Otherwise just look for non-spaces
         else if(characters[index] != " ") {
