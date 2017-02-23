@@ -61,7 +61,6 @@ void System::create_machine(const string& type, const string& name, const IP_add
         ++i;
     }
     network_[i] = make_shared<Node>(name, ip);
-    //cout << "create machine: " << network_[i]->get_ip() << ' ' << i << endl;
 
     cout << "System::create_machine: " << type << ' ' << name << ' ';
     cout << ip;
