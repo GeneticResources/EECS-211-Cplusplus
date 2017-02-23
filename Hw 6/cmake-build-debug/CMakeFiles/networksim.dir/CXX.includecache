@@ -1,0 +1,152 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/datagram.cpp
+datagram.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/datagram.h
+parsing.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/parsing.h
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/errors.h
+cstdlib
+-
+iostream
+-
+string
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/datagram.h
+array
+-
+string
+-
+iostream
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/errors.cpp
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/errors.h
+string
+-
+iostream
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/errors.h
+string
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/interface.cpp
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/errors.h
+system.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/system.h
+interface.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/interface.h
+string
+-
+vector
+-
+iostream
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/interface.h
+system.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/system.h
+string
+-
+vector
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/machines.cpp
+machines.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/machines.h
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/errors.h
+iostream
+-
+stdlib.h
+-
+string
+-
+cmath
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/machines.h
+datagram.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/datagram.h
+vector
+-
+memory
+-
+iostream
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/main.cpp
+interface.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/interface.h
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/errors.h
+parsing.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/parsing.h
+system.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/system.h
+iostream
+-
+string
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/parsing.cpp
+parsing.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/parsing.h
+interface.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/interface.h
+iostream
+-
+string
+-
+vector
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/parsing.h
+interface.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/interface.h
+string
+-
+vector
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/system.cpp
+system.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/system.h
+machines.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/machines.h
+string
+-
+vector
+-
+memory
+-
+iostream
+-
+
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/system.h
+errors.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/errors.h
+machines.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/machines.h
+datagram.h
+/Users/michaelhsu/Documents/Github/EECS 211/Hw 6/datagram.h
+iostream
+-
+string
+-
+vector
+-
+memory
+-
+

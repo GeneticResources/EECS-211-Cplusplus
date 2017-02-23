@@ -8,19 +8,81 @@
 
 using namespace std;
 
+// Turn an IP address into an array of ints (IP address)
 IP_address::IP_address(string s)
 {
-    // [YOUR HW5 parse_IP CODE HERE]
+    string stringNum = "";
+    int lastStartIndex = 0;
+    int index = 0;
+    array<int, 4> nums = {};
+    int countDots = 0;
+
+    // Check errors
+    if(s.length() == 0)
+        throw err_code::bad_ip_address;
+    for(int i = 0; i < s.length(); ++i) {
+        int ascii = (int) s.at(i);
+
+        // If not between 0-9 and is not a period
+        if(!(ascii >= 48 && ascii <= 57) && ascii != 46)
+            throw err_code::bad_ip_address;
+    }
+
+    for(int i = 0; i < s.length(); ++i) {
+        if(s.at(i) == '.') {
+            stringNum = s.substr(lastStartIndex, i - lastStartIndex);
+            lastStartIndex = i + 1;
+            ++countDots;
+
+            try {
+                parse_int(stringNum);
+            } catch (runtime_error) {
+                throw err_code::bad_ip_address;
+            }
+
+            // Error checking for between 0 and 255
+            if(parse_int(stringNum) < 0 || parse_int(stringNum) > 255)
+                throw err_code::bad_ip_address;
+
+            nums[index] = parse_int(stringNum);
+            ++index;
+        }
+        if(index == 3) {
+            stringNum = s.substr(lastStartIndex, s.length());
+
+            if(stringNum.length() > 3)
+                throw err_code::bad_ip_address;
+
+            nums[index] = parse_int(stringNum);
+            break;
+        }
+    }
+
+    // Error checking
+    if(countDots != 3 && s.length() != 0)
+        throw err_code::bad_ip_address;
+
+    ip_ = nums;
 }
 
+// Operator to check if IP addresses are equal
 bool IP_address::operator==(const IP_address& that) const
 {
-    // [YOUR CODE HERE]
+    if(that.ip_.size() == ip_.size()) {
+        for(int i = 0; i < ip_.size(); ++i) {
+            if(that.ip_[i] != ip_[i])
+                return false;
+        }
+        return true;
+    }
+    else
+        return false;
 }
 
+// Get first number of IP address
 int IP_address::first_octad() const
 {
-    // [YOUR CODE HERE]
+    return ip_[0];
 }
 
 std::ostream& operator<<(std::ostream& os, const IP_address& addr)
@@ -33,12 +95,12 @@ std::ostream& operator<<(std::ostream& os, const IP_address& addr)
 }
 
 Datagram::Datagram(const IP_address& s, const IP_address& d, const string& m)
-        : src_(""), dst_("") // [REPLACE THIS LINE BY YOUR CODE HERE]
+        : src_(s), dst_(d), msg_(m)
 {};
 
 IP_address Datagram::get_destination() const
 {
-    // [YOUR CODE HERE]
+    return dst_;
 }
 
 std::ostream& operator<<(std::ostream& os, const Datagram& dg)

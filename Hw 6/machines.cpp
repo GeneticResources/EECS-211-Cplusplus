@@ -22,19 +22,27 @@ void Node::format(ostream& os) const
     os << "\n  }";
 }
 
+// Get IP address of machine
 IP_address Node::get_ip() const
 {
-    // [YOUR CODE HERE]
+    return local_ip_;
 }
 
+// Connect to other machine
 void Node::connect(const shared_ptr<Node>& x)
 {
-    // [YOUR CODE HERE]
+    node_list_.push_back(x);
 }
 
+// Disconnect from other machine
 void Node::disconnect(const shared_ptr<Node>& x)
 {
-    // [YOUR CODE HERE]
+    for(int i = 0; i < node_list_.size(); ++i) {
+        if(node_list_[i] == x) {
+            node_list_[i] = node_list_.back();
+            node_list_.pop_back();
+        }
+    }
 }
 
 std::ostream& operator<<(std::ostream& os, const Node& n)
