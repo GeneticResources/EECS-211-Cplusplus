@@ -61,6 +61,7 @@ void System::create_machine(const string& type, const string& name, const IP_add
         ++i;
     }
     network_[i] = make_shared<Node>(name, ip);
+    //cout << "create machine: " << network_[i]->get_ip() << ' ' << i << endl;
 
     cout << "System::create_machine: " << type << ' ' << name << ' ';
     cout << ip;
@@ -128,11 +129,13 @@ void System::connect_machine(const IP_address& ip1, const IP_address& ip2)
     // Find and connect machines
     int mach1 = 0, mach2 = 0;
     for(int i = 0; i < network_.size(); ++i) {
+        if(network_[i] == nullptr) break;
         if(network_[i]->get_ip() == ip1)
             mach1 = i;
         else if(network_[i]->get_ip() == ip2)
             mach2 = i;
     }
+
     network_[mach1]->connect(network_[mach2]);
     network_[mach2]->connect(network_[mach1]);
 

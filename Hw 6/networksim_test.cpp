@@ -298,3 +298,14 @@ TEST(DELETE_MACHINE) {
 
     sys2.delete_machine(IP_address("10.105.148.38"));
 }
+TEST(CONNECT_MACHINE) {
+    System sys1 = System();
+    System sys2 = System();
+
+    sys1.create_machine("laptop", "user1", IP_address("10.10.10.10"));
+    sys1.create_machine("laptop", "user2", IP_address("9.9.9.9"));
+
+    CHECK_THROW_ENUM(sys1.connect_machine(IP_address("10.10.10.10"), IP_address("11.11.11.11")), err_code, no_such_machine);
+
+    sys1.connect_machine(IP_address("10.10.10.10"), IP_address("9.9.9.9"));
+}
