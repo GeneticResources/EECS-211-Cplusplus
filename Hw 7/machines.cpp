@@ -14,7 +14,8 @@ Node::Node(const std::string& n, IP_address ip)
 
 Node::~Node()
 {
-    // [YOUR CODE HERE]
+    if(incoming_ != nullptr)
+        delete incoming_;
 }
 
 void Node::format(ostream& os) const
@@ -57,22 +58,105 @@ void Node::disconnect(const shared_ptr<Node>& x)
 
 size_t Node::send()
 {
-    // [YOUR CODE HERE]
+    int diff = 0, min = 0, minIndex = 0;
+    bool foundMachine, first = true;
+    Datagram* minimum;
+    size_t success = 0;
+    List copyData = nullptr, curr = data_list_;
+
+    if(node_list_.size() != 0) {
+
+        // For every datagram in data_list_, find where connected machine ip equals destination ip
+        while(curr != nullptr) {
+            foundMachine = false;
+
+            // Check if the destination ip equals machine ip
+            for(int i = 0; i < node_list_.size(); ++i) {
+                if(curr->data->get_destination() == node_list_[i]->get_ip()) {
+                    foundMachine = true;
+                    List head = pop_front(curr);
+
+                    // If buffer is full, then don't send
+                    try {
+                        node_list_[i]->receive(head->data);
+                        head->data = nullptr;
+                    } catch (err_code recv_blocked){
+                        push_back(copyData, head->data);
+                        break;
+                    }
+
+                    ++success;
+                    break;
+                }
+            }
+
+            // If no matching machine
+            if(!foundMachine) {
+
+                // Find machine with minimum difference
+                for (int i = 0; i < node_list_.size(); ++i) {
+                    if (first) {
+                        min = node_list_[0]->get_ip().first_octad() - curr->data->get_destination().first_octad();
+                        first = false;
+                    }
+                    diff = node_list_[i]->get_ip().first_octad() - curr->data->get_destination().first_octad();
+
+                    // Keep positive
+                    if (diff < 0)
+                        diff = -diff;
+                    if (min < 0)
+                        min = -min;
+
+                    if (diff < min || min == diff) {
+                        min = diff;
+                        minIndex = i;
+                    }
+                }
+
+                first = true;
+                List head = pop_front(curr);
+
+                // Send datagram to minimum octad difference
+                try {
+                    node_list_[minIndex]->receive(head->data);
+                    head->data = nullptr;
+                } catch (err_code recv_blocked){
+                    push_back(copyData, head->data);
+                    continue;
+                }
+                ++success;
+            }
+        }
+        data_list_ = copyData;
+    }
+
+    return success;
 }
 
 void Node::receive(Datagram* d)
 {
-    // [YOUR CODE HERE]
+    if(d->get_destination() == local_ip_) {
+        if(incoming_ == nullptr)
+            incoming_ = d;
+        else
+            throw err_code :: recv_blocked;
+    } else push_back(data_list_, d);
 }
 
 void Node::allocate_datagram(const IP_address& dst, const string& message)
 {
-    // [YOUR CODE HERE]
+    Datagram* newPtr = new Datagram(local_ip_, dst, message);
+    push_back(data_list_, newPtr);
 }
 
 string Node::release_datagram()
 {
-    // [YOUR CODE HERE]
+    if(incoming_ != nullptr) {
+        string s = incoming_->get_msg();
+        delete incoming_;
+        incoming_ = nullptr;
+        return s;
+    } else return "";
 }
 
 std::ostream& operator<<(std::ostream& os, const Node& n)

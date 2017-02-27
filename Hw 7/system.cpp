@@ -148,7 +148,34 @@ void System::allocate_datagram(const IP_address& ip1,
                                const IP_address& ip2,
                                const string& message)
 {
-    // [YOUR CODE HERE]
+    // Error checking
+    vector<int> indexes {};
+    for(int i = 0; i < network_.size(); ++i) {
+        if(network_[i] != nullptr)
+            indexes.push_back(i);
+    }
+    if(indexes.size() == 0) throw err_code :: no_such_machine;
+    for(int i = 0; i < indexes.size(); ++i) {
+        if(network_[indexes[i]]->get_ip() == ip1)
+            break;
+        else if(i >= indexes.size() - 1)
+            throw err_code :: no_such_machine;
+    }
+    for(int i = 0; i < indexes.size(); ++i) {
+        if(network_[indexes[i]]->get_ip() == ip2)
+            break;
+        else if(i >= indexes.size() - 1)
+            throw err_code :: no_such_machine;
+    }
+
+    int machine1 = 0;
+    for(int i = 0; i < network_.size(); ++i) {
+        if(network_[i] == nullptr) break;
+        if(network_[i]->get_ip() == ip1)
+            machine1 = i;
+    }
+    network_[machine1]->allocate_datagram(ip2, message);
+
     cout << "System::allocate_datagram: ";
     cout << ip1;
     cout << ", ";
@@ -158,7 +185,28 @@ void System::allocate_datagram(const IP_address& ip1,
 
 void System::release_datagram(const IP_address& ip)
 {
-    // [YOUR CODE HERE]
+    // Error checking
+    vector<int> indexes {};
+    for(int i = 0; i < network_.size(); ++i) {
+        if(network_[i] != nullptr)
+            indexes.push_back(i);
+    }
+    if(indexes.size() == 0) throw err_code :: no_such_machine;
+    for(int i = 0; i < indexes.size(); ++i) {
+        if(network_[indexes[i]]->get_ip() == ip)
+            break;
+        else if(i >= indexes.size() - 1)
+            throw err_code :: no_such_machine;
+    }
+
+    int machine = 0;
+    for(int i = 0; i < network_.size(); ++i) {
+        if(network_[i] == nullptr) break;
+        if(network_[i]->get_ip() == ip)
+            machine = i;
+    }
+    network_[machine]->release_datagram();
+
     cout << "System::release_datagram: ";
     cout << ip;
     cout << '\n';
@@ -166,7 +214,11 @@ void System::release_datagram(const IP_address& ip)
 
 void System::time_click()
 {
-    // [YOUR CODE HERE]
+    for(int i = 0; i < network_.size(); ++i) {
+        if(network_[i] == nullptr) break;
+        else network_[i]->send();
+    }
+
     ++tick_;
     cout << "System::time_click\n";
 }
