@@ -12,10 +12,15 @@ Node::Node(const std::string& n, IP_address ip)
         : name_(n), local_ip_(ip)
 {}
 
+// Problem here
 Node::~Node()
 {
-    if(incoming_ != nullptr)
+    if(incoming_ != nullptr) {
+        cout << "incoming_ is not null" << endl;
         delete incoming_;
+    }
+    if(incoming_ == nullptr)
+        cout << "incoming_ is null" << endl;
 }
 
 void Node::format(ostream& os) const
@@ -58,33 +63,35 @@ void Node::disconnect(const shared_ptr<Node>& x)
 
 size_t Node::send()
 {
+
     int diff = 0, min = 0, minIndex = 0;
     bool foundMachine, first = true;
-    Datagram* minimum;
     size_t success = 0;
-    List copyData = nullptr, curr = data_list_;
+
+    // Make a copy of data_list_ or not?
+    List failedSend;//, curr = data_list_;
 
     if(node_list_.size() != 0) {
 
         // For every datagram in data_list_, find where connected machine ip equals destination ip
-        while(curr != nullptr) {
+        while(data_list_ != nullptr) {
             foundMachine = false;
 
             // Check if the destination ip equals machine ip
             for(int i = 0; i < node_list_.size(); ++i) {
-                if(curr->data->get_destination() == node_list_[i]->get_ip()) {
+                if(data_list_->data->get_destination() == node_list_[i]->get_ip()) {
                     foundMachine = true;
-                    List head = pop_front(curr);
+                    List head = pop_front(data_list_);
 
                     // If buffer is full, then don't send
                     try {
                         node_list_[i]->receive(head->data);
-                        head->data = nullptr;
-                    } catch (err_code recv_blocked){
-                        push_back(copyData, head->data);
+                    } catch (err_code e){
+                        push_back(failedSend, head->data);
                         break;
                     }
 
+                    head->data = nullptr;
                     ++success;
                     break;
                 }
@@ -95,11 +102,12 @@ size_t Node::send()
 
                 // Find machine with minimum difference
                 for (int i = 0; i < node_list_.size(); ++i) {
+
                     if (first) {
-                        min = node_list_[0]->get_ip().first_octad() - curr->data->get_destination().first_octad();
+                        min = node_list_[0]->get_ip().first_octad() - data_list_->data->get_destination().first_octad();
                         first = false;
                     }
-                    diff = node_list_[i]->get_ip().first_octad() - curr->data->get_destination().first_octad();
+                    diff = node_list_[i]->get_ip().first_octad() - data_list_->data->get_destination().first_octad();
 
                     // Keep positive
                     if (diff < 0)
@@ -114,33 +122,41 @@ size_t Node::send()
                 }
 
                 first = true;
-                List head = pop_front(curr);
+                List head = pop_front(data_list_);
 
                 // Send datagram to minimum octad difference
                 try {
                     node_list_[minIndex]->receive(head->data);
-                    head->data = nullptr;
-                } catch (err_code recv_blocked){
-                    push_back(copyData, head->data);
+                } catch (err_code e){
+                    push_back(failedSend, head->data);
                     continue;
                 }
+
+                head->data = nullptr;
                 ++success;
             }
         }
-        data_list_ = copyData;
+        data_list_ = failedSend;
     }
 
     return success;
 }
 
+// Ask about changing data_list_ and copy of data_list_
 void Node::receive(Datagram* d)
 {
     if(d->get_destination() == local_ip_) {
+        cout << "destination " << d->get_destination() << " equal ip in network" << endl;
         if(incoming_ == nullptr)
             incoming_ = d;
-        else
-            throw err_code :: recv_blocked;
-    } else push_back(data_list_, d);
+        else {
+            cout << "buffer of " << local_ip_ << " is full" << endl;
+            throw err_code::recv_blocked;
+        }
+    } else {
+        cout << "data list pushed back" << endl;
+        push_back(data_list_, d);
+    }
 }
 
 void Node::allocate_datagram(const IP_address& dst, const string& message)

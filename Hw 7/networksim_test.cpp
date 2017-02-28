@@ -40,7 +40,7 @@ public:
         }
     }
 };
-/*
+
 // Test the specification "If the destination of the Datagram is
 // in the connected machines, send the datagram to that machine."
 TEST(SEND_BEST_MACHINE_DESTINATION_MATCH)
@@ -54,15 +54,38 @@ TEST(SEND_BEST_MACHINE_DESTINATION_MATCH)
 // Test the specification "Otherwise, send it to the connected machine
 // whose first number of IP address is closest to the first number of
 // the destination."
+
 TEST(SEND_BEST_MACHINE_CLOSEST_FIRST_NUMBER)
 {
     SystemF sys;
     sys.ms_[0]->allocate_datagram(IP_address("9.8.7.6"), "pong");
     CHECK_EQUAL(1, sys.ms_[0]->send()); // successfully sent one datagram
-    CHECK_EQUAL(1, sys.ms_[3]->send()); // ms_[3] is not the destination, but
-                                        // we can send it out again
+
+    // This doesn't work
+    CHECK_EQUAL(1, sys.ms_[3]->send()); // ms_[3] is not the destination,
+                                        // but we can send it out again
 }
-*/
+
+
+
+TEST(SYSTEM_ALLOCATE_DATAGRAM_SEND_RELEASE) {
+    SystemF sys;
+
+    sys.ms_[1]->connect(sys.ms_[2]);
+    sys.ms_[2]->connect(sys.ms_[1]);
+    sys.ms_[1]->connect(sys.ms_[3]);
+    sys.ms_[3]->connect(sys.ms_[1]);
+    sys.ms_[1]->connect(sys.ms_[0]);
+    sys.ms_[0]->connect(sys.ms_[1]);
+
+    sys.ms_[1]->allocate_datagram(sys.ms_[0]->get_ip(), "system datagram 1");
+    sys.ms_[1]->allocate_datagram(IP_address("23.42.2.2"), "system datagram 2");
+
+    CHECK_EQUAL(2, sys.ms_[1]->send());
+    CHECK_EQUAL("system datagram 1", sys.ms_[0]->release_datagram());
+}
+
+/*
 
 #define CHECK_THROW_ENUM(expression, EnumType, EnumValue) \
    UNITTEST_MULTILINE_MACRO_BEGIN \
@@ -201,6 +224,7 @@ TEST(PARSE_INT) {
     CHECK_EQUAL(0, parse_int("0"));
 }
 
+
 // Sample test to demonstrate how to use shared_ptr::use_count() to test whether
 // Node::disconnect() works or not. If it works, n1 and n2 should no longer hold
 // reference to each other, so the use_count() will decrease to 1. After this
@@ -208,14 +232,10 @@ TEST(PARSE_INT) {
 // DISCONNECT Machine 2' deleted" nad "machine 'NODE_DISCONNECT Machine 1' deleted"
 // because n1 and n2 are the only reference to these two machines. After they
 // go out of scope, the memory they hold will be deallocated.
-TEST(NODE_DISCONNECT)
-{
-
-    // shared_ptr, connect_machine, disconnect_machine causing error
-
-
+TEST(NODE_DISCONNECT) {
     // Allocate the machine and connect them, as did in System::create_machine
     // and System::connect_machine.
+
     shared_ptr<Node> n1 = make_shared<Node>("NODE_DISCONNECT Machine 1", IP_address("1.2.3.4"));
     shared_ptr<Node> n2 = make_shared<Node>("NODE_DISCONNECT Machine 2", IP_address("5.6.7.8"));
 
@@ -366,3 +386,4 @@ TEST(CONNECT_MACHINE) {
 
     sys1.connect_machine(IP_address("10.10.10.10"), IP_address("9.9.9.9"));
 }
+*/

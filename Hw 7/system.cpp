@@ -220,6 +220,7 @@ void System::time_click()
     }
 
     ++tick_;
+
     cout << "System::time_click\n";
 }
 
