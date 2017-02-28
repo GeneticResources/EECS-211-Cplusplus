@@ -215,8 +215,8 @@ void System::release_datagram(const IP_address& ip)
 void System::time_click()
 {
     for(int i = 0; i < network_.size(); ++i) {
-        if(network_[i] == nullptr) break;
-        else network_[i]->send();
+        if(network_[i] != nullptr)
+            network_[i]->send();
     }
 
     ++tick_;

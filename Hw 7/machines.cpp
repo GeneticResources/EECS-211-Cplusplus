@@ -58,12 +58,9 @@ void Node::disconnect(const shared_ptr<Node>& x)
 
 size_t Node::send()
 {
-
     int diff = 0, min = 0, minIndex = 0;
     bool foundMachine, first = true;
     size_t success = 0;
-
-    // Make a copy of data_list_ or not?
     List failedSend;
 
     if(node_list_.size() != 0) {
@@ -137,7 +134,6 @@ size_t Node::send()
     return success;
 }
 
-// Ask about changing data_list_ and copy of data_list_
 void Node::receive(Datagram* d)
 {
     if(d->get_destination() == local_ip_) {

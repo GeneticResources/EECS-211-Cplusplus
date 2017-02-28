@@ -12,6 +12,19 @@
 
 using namespace std;
 
+#define CHECK_THROW_ENUM(expression, EnumType, EnumValue) \
+   UNITTEST_MULTILINE_MACRO_BEGIN \
+   bool caught_ = false; \
+   try { expression; } \
+   catch (EnumType e) { caught_ = e == EnumType::EnumValue; } \
+   catch (...) {} \
+   if (!caught_) \
+      UnitTest::CurrentTest::Results()->OnTestFailure( \
+          UnitTest::TestDetails(*UnitTest::CurrentTest::Details(), \
+                                __LINE__), \
+          "Expected exception: \"" #EnumValue "\" not thrown"); \
+   UNITTEST_MULTILINE_MACRO_END
+
 // A system of four connected machines. They are used in the following unit
 // tests
 class SystemF
@@ -64,8 +77,6 @@ TEST(SEND_BEST_MACHINE_CLOSEST_FIRST_NUMBER)
                                         // but we can send it out again
 }
 
-
-
 TEST(SYSTEM_ALLOCATE_DATAGRAM_SEND_RELEASE) {
     SystemF sys;
 
@@ -82,20 +93,6 @@ TEST(SYSTEM_ALLOCATE_DATAGRAM_SEND_RELEASE) {
     CHECK_EQUAL(2, sys.ms_[1]->send());
     CHECK_EQUAL("system datagram 1", sys.ms_[0]->release_datagram());
 }
-
-#define CHECK_THROW_ENUM(expression, EnumType, EnumValue) \
-   UNITTEST_MULTILINE_MACRO_BEGIN \
-   bool caught_ = false; \
-   try { expression; } \
-   catch (EnumType e) { caught_ = e == EnumType::EnumValue; } \
-   catch (...) {} \
-   if (!caught_) \
-      UnitTest::CurrentTest::Results()->OnTestFailure( \
-          UnitTest::TestDetails(*UnitTest::CurrentTest::Details(), \
-                                __LINE__), \
-          "Expected exception: \"" #EnumValue "\" not thrown"); \
-   UNITTEST_MULTILINE_MACRO_END
-
 
 // Runtime error tests for all three functions
 TEST(TOKENIZE_ERROR) {
@@ -381,4 +378,68 @@ TEST(CONNECT_MACHINE) {
     CHECK_THROW_ENUM(sys1.connect_machine(IP_address("10.10.10.10"), IP_address("11.11.11.11")), err_code, no_such_machine);
 
     sys1.connect_machine(IP_address("10.10.10.10"), IP_address("9.9.9.9"));
+}
+TEST(ALLOCATE_DATAGRAM_ERROR) {
+    System sys = System();
+
+    sys.create_machine("laptop", "user1", IP_address("10.10.10.10"));
+    sys.create_machine("laptop", "user2", IP_address("9.9.9.9"));
+    sys.connect_machine(IP_address("10.10.10.10"), IP_address("9.9.9.9"));
+
+    CHECK_THROW_ENUM(sys.allocate_datagram(IP_address("1.1.1.1"), IP_address("10.10.10.10"), "hello"), err_code, no_such_machine);
+}
+TEST(RELEASE_DATAGRAM_ERROR) {
+    System sys = System();
+
+    sys.create_machine("laptop", "user1", IP_address("10.10.10.10"));
+    sys.create_machine("laptop", "user2", IP_address("9.9.9.9"));
+    sys.connect_machine(IP_address("10.10.10.10"), IP_address("9.9.9.9"));
+
+    CHECK_THROW_ENUM(sys.release_datagram(IP_address("1.1.1.1")), err_code, no_such_machine);
+}
+TEST(TIME_CLICK) {
+    System sys = System();
+
+    sys.create_machine("laptop", "user1", IP_address("10.10.10.10"));
+    sys.create_machine("laptop", "user2", IP_address("9.9.9.9"));
+    sys.connect_machine(IP_address("10.10.10.10"), IP_address("9.9.9.9"));
+
+    sys.time_click();
+}
+TEST(SEND) {
+    shared_ptr<Node> node1 = make_shared<Node>("node1", IP_address("10.105.148.39"));
+    shared_ptr<Node> node2 = make_shared<Node>("node2", IP_address("8.8.8.8"));
+
+    node1->connect(node2);
+    node2->connect(node1);
+
+    node1->allocate_datagram(node2->get_ip(), "hello");
+    CHECK_EQUAL(1, node1->send());
+}
+TEST(RECEIVE) {
+    shared_ptr<Node> node1 = make_shared<Node>("node1", IP_address("10.105.148.39"));
+
+    Datagram* d1 = new Datagram(IP_address("1.1.1.1"), IP_address("10.105.148.39"), "hello world");
+    Datagram* d2 = new Datagram(IP_address("3.3.3.3"), IP_address("10.105.148.39"), "bye world");
+
+    node1->receive(d1);
+
+    CHECK_THROW_ENUM(node1->receive(d2), err_code, recv_blocked);
+}
+TEST(ALLOCATE_DATAGRAM) {
+    shared_ptr<Node> node1 = make_shared<Node>("node1", IP_address("10.105.148.39"));
+
+    node1->allocate_datagram(IP_address("10.10.10.10"), "hello");
+    node1->allocate_datagram(IP_address("1.1.1.1"), "hi");
+}
+TEST(RELEASE_DATAGRAM) {
+    shared_ptr<Node> node1 = make_shared<Node>("node1", IP_address("10.105.148.39"));
+    shared_ptr<Node> node2 = make_shared<Node>("node2", IP_address("8.8.8.8"));
+
+    node1->connect(node2);
+    node2->connect(node1);
+
+    node1->allocate_datagram(node2->get_ip(), "hello");
+    node1->send();
+    CHECK_EQUAL("hello", node2->release_datagram());
 }
