@@ -9,18 +9,13 @@
 using namespace std;
 
 Node::Node(const std::string& n, IP_address ip)
-        : name_(n), local_ip_(ip), incoming_(nullptr), data_list_(nullptr)
+        : name_(n), local_ip_(ip), incoming_(nullptr)
 {}
 
-// Problem here
 Node::~Node()
 {
-    if(incoming_ != nullptr) {
-        cout << "incoming_ is not null" << endl;
+    if(incoming_ != nullptr)
         delete incoming_;
-    }
-    if(incoming_ == nullptr)
-        cout << "incoming_ is null" << endl;
 }
 
 void Node::format(ostream& os) const
@@ -146,17 +141,12 @@ size_t Node::send()
 void Node::receive(Datagram* d)
 {
     if(d->get_destination() == local_ip_) {
-        cout << "destination " << d->get_destination() << " equal ip in network" << endl;
         if(incoming_ == nullptr)
             incoming_ = d;
-        else {
-            cout << "buffer of " << local_ip_ << " is full" << endl;
+        else
             throw err_code::recv_blocked;
-        }
-    } else {
-        cout << "data list pushed back" << endl;
+    } else
         push_back(data_list_, d);
-    }
 }
 
 void Node::allocate_datagram(const IP_address& dst, const string& message)

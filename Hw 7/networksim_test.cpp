@@ -60,8 +60,6 @@ TEST(SEND_BEST_MACHINE_CLOSEST_FIRST_NUMBER)
     SystemF sys;
     sys.ms_[0]->allocate_datagram(IP_address("9.8.7.6"), "pong");
     CHECK_EQUAL(1, sys.ms_[0]->send()); // successfully sent one datagram
-
-    // This doesn't work
     CHECK_EQUAL(1, sys.ms_[3]->send()); // ms_[3] is not the destination,
                                         // but we can send it out again
 }
