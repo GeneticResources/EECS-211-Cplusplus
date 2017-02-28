@@ -85,8 +85,6 @@ TEST(SYSTEM_ALLOCATE_DATAGRAM_SEND_RELEASE) {
     CHECK_EQUAL("system datagram 1", sys.ms_[0]->release_datagram());
 }
 
-/*
-
 #define CHECK_THROW_ENUM(expression, EnumType, EnumValue) \
    UNITTEST_MULTILINE_MACRO_BEGIN \
    bool caught_ = false; \
@@ -386,4 +384,3 @@ TEST(CONNECT_MACHINE) {
 
     sys1.connect_machine(IP_address("10.10.10.10"), IP_address("9.9.9.9"));
 }
-*/

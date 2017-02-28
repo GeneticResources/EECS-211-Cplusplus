@@ -9,7 +9,7 @@
 using namespace std;
 
 Node::Node(const std::string& n, IP_address ip)
-        : name_(n), local_ip_(ip)
+        : name_(n), local_ip_(ip), incoming_(nullptr), data_list_(nullptr)
 {}
 
 // Problem here
@@ -69,7 +69,7 @@ size_t Node::send()
     size_t success = 0;
 
     // Make a copy of data_list_ or not?
-    List failedSend;//, curr = data_list_;
+    List failedSend;
 
     if(node_list_.size() != 0) {
 
