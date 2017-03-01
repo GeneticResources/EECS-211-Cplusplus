@@ -35,19 +35,27 @@ bool compareLists(List& list1, List& list2) {
 // Filters out nodes with data greater than or equal to limit
 void filter_lt(List& front, int limit)
 {
-    List ptrHolder = nullptr;
-    bool match = false;
+    List copy = front, curr = front;
+    vector<size_t> nth = {};
+    size_t index = 0;
 
-    // Store Lists that have data values less than limit into a new List
-    // Use push_back to store
-    for(List curr = front; curr != nullptr; curr = curr->next) {
-        if(curr->data < limit) {
-            push_back(ptrHolder, curr->data);
-            match = true;
-        }
+    // Store location of nodes to keep
+    while(copy != nullptr) {
+        if(copy->data < limit)
+            nth.push_back(index);
+        ++index;
+        copy = copy->next;
     }
-    if(front != nullptr && match)
-        front = ptrHolder;
+
+    // Insert into original list
+    for(int i = 0; i < nth.size(); ++i) {
+        curr->data = nth_element(front, nth[i]);
+        if(i == nth.size() - 1) {
+            curr->next = nullptr;
+            break;
+        }
+        curr = curr->next;
+    }
 }
 
 // Adds a node to the end of the linked list
@@ -72,8 +80,9 @@ List pop_front(List& front)
 
     List front2 = front;
     front = front->next;
+    front2->next = nullptr;
 
-    return cons(front2->data, nullptr);
+    return front2;
 }
 
 // Returns the data of the n+1th node
