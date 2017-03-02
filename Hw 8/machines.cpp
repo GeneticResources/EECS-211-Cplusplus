@@ -35,7 +35,6 @@ Laptop::Laptop(const string& n, IP_address ip) : Node(n, ip)
 bool Laptop::can_connect(const shared_ptr<Node>& x) const
 {
     return dynamic_pointer_cast<Server>(x) != nullptr;
-
 }
 
 void Laptop::connect(const shared_ptr<Node>& x)
@@ -45,7 +44,6 @@ void Laptop::connect(const shared_ptr<Node>& x)
     server_ = dynamic_pointer_cast<Server>(x);
 }
 
-// *************************Check this*************************
 void Laptop::disconnect(const shared_ptr<Node>& x)
 {
     server_ = nullptr;
@@ -126,15 +124,12 @@ Server::Server(const string& n, IP_address a)
 // Only able to connect to 8 laptops and 4 WANs
 bool Server::can_connect(const shared_ptr<Node>& x) const
 {
-    shared_ptr<Laptop> laptop = dynamic_pointer_cast<Laptop>(x);
-    shared_ptr<WAN_node> wan = dynamic_pointer_cast<WAN_node>(x);
-
-    return laptop != nullptr || wan != nullptr;
+    return dynamic_pointer_cast<Laptop>(x) != nullptr || dynamic_pointer_cast<WAN_node>(x) != nullptr;
 }
 
 void Server::connect(const shared_ptr<Node>& x)
 {
-    if(num_laptops_ == 8 || num_wans_ == 4) throw err_code :: connect_failed;
+    if(num_laptops_ >= 8 || num_wans_ >= 4) throw err_code :: connect_failed;
 
     if(dynamic_pointer_cast<Laptop>(x) != nullptr)
         ++num_laptops_;
@@ -270,15 +265,12 @@ WAN_node::WAN_node(const string& n, IP_address a)
 // Only able to connect to 4 WANs and 4 servers
 bool WAN_node::can_connect(const shared_ptr<Node>& x) const
 {
-    shared_ptr<Server> server = dynamic_pointer_cast<Server>(x);
-    shared_ptr<WAN_node> wan = dynamic_pointer_cast<WAN_node>(x);
-
-    return server != nullptr || wan != nullptr;
+    return dynamic_pointer_cast<Server>(x) != nullptr || dynamic_pointer_cast<WAN_node>(x) != nullptr;
 }
 
 void WAN_node::connect(const shared_ptr<Node>& x)
 {
-    if(num_servers_ == 4 || num_wans_ == 4) throw err_code :: connect_failed;
+    if(num_servers_ >= 4 || num_wans_ >= 4) throw err_code :: connect_failed;
 
     if(dynamic_pointer_cast<Server>(x) != nullptr)
         ++num_servers_;
