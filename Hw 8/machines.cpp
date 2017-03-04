@@ -51,14 +51,9 @@ void Laptop::disconnect(const shared_ptr<Node>& x)
 
 size_t Laptop::send()
 {
-    bool foundMachine = false;
     size_t success = 0;
 
-    try {
-        server_->receive(outgoing_);
-    } catch (err_code e){
-        return success;
-    }
+    server_->receive(outgoing_);
 
     outgoing_ = nullptr;
     ++success;
@@ -129,17 +124,24 @@ bool Server::can_connect(const shared_ptr<Node>& x) const
 
 void Server::connect(const shared_ptr<Node>& x)
 {
-    if(num_laptops_ >= 8 || num_wans_ >= 4) throw err_code :: connect_failed;
-
-    if(dynamic_pointer_cast<Laptop>(x) != nullptr)
+    if(dynamic_pointer_cast<Laptop>(x) != nullptr) {
         ++num_laptops_;
-    else if(dynamic_pointer_cast<WAN_node>(x) != nullptr)
+        if(num_laptops_ > 8) {
+            --num_laptops_;
+            throw err_code :: connect_failed;
+        }
+    }
+    else if(dynamic_pointer_cast<WAN_node>(x) != nullptr) {
         ++num_wans_;
+        if(num_wans_ > 4) {
+            --num_wans_;
+            throw err_code :: connect_failed;
+        }
+    }
 
     node_list_.push_back(x);
 }
 
-// *************************Check this*************************
 void Server::disconnect(const shared_ptr<Node>& x)
 {
     for(int i = 0; i < node_list_.size(); ++i) {
@@ -148,6 +150,10 @@ void Server::disconnect(const shared_ptr<Node>& x)
             node_list_.pop_back();
         }
     }
+    if(dynamic_pointer_cast<Laptop>(x) != nullptr)
+        --num_laptops_;
+    else if(dynamic_pointer_cast<WAN_node>(x) != nullptr)
+        --num_wans_;
 }
 
 void Server::receive(Datagram* d)
@@ -270,17 +276,24 @@ bool WAN_node::can_connect(const shared_ptr<Node>& x) const
 
 void WAN_node::connect(const shared_ptr<Node>& x)
 {
-    if(num_servers_ >= 4 || num_wans_ >= 4) throw err_code :: connect_failed;
-
-    if(dynamic_pointer_cast<Server>(x) != nullptr)
+    if(dynamic_pointer_cast<Server>(x) != nullptr) {
         ++num_servers_;
-    else if(dynamic_pointer_cast<WAN_node>(x) != nullptr)
+        if(num_servers_ > 4) {
+            --num_servers_;
+            throw err_code :: connect_failed;
+        }
+    }
+    else if(dynamic_pointer_cast<WAN_node>(x) != nullptr) {
         ++num_wans_;
+        if(num_wans_ > 4) {
+            --num_wans_;
+            throw err_code :: connect_failed;
+        }
+    }
 
     node_list_.push_back(x);
 }
 
-// *************************Check this*************************
 void WAN_node::disconnect(const shared_ptr<Node>& x)
 {
     for(int i = 0; i < node_list_.size(); ++i) {
@@ -289,6 +302,10 @@ void WAN_node::disconnect(const shared_ptr<Node>& x)
             node_list_.pop_back();
         }
     }
+    if(dynamic_pointer_cast<Server>(x) != nullptr)
+        --num_servers_;
+    else if(dynamic_pointer_cast<WAN_node>(x) != nullptr)
+        --num_wans_;
 }
 
 void WAN_node::receive(Datagram* d)

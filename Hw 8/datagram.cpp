@@ -92,7 +92,7 @@ std::ostream& operator<<(std::ostream& os, const IP_address& addr)
 }
 
 Datagram::Datagram(const IP_address& s, const IP_address& d, const string& m)
-        : src_(""), dst_("") // [REPLACE THIS LINE BY YOUR HW6 CODE HERE]
+        : src_(s), dst_(d), msg_(m)
 {};
 
 IP_address Datagram::get_destination() const
