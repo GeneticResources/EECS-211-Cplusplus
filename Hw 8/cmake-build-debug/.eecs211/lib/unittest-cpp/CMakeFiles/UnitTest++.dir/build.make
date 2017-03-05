@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8"
+CMAKE_SOURCE_DIR = "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/depend.make
@@ -59,16 +59,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/AssertException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/AssertException.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/AssertException.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/AssertException.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/AssertException.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/AssertException.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/AssertException.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.o.requires:
 
@@ -83,16 +83,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/Checks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Checks.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Checks.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Checks.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Checks.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Checks.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Checks.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.o.requires:
 
@@ -107,16 +107,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/CompositeTestReporter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CompositeTestReporter.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CompositeTestReporter.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CompositeTestReporter.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CompositeTestReporter.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CompositeTestReporter.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CompositeTestReporter.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.o.requires:
 
@@ -131,16 +131,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/CurrentTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CurrentTest.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CurrentTest.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CurrentTest.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CurrentTest.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CurrentTest.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/CurrentTest.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.o.requires:
 
@@ -155,16 +155,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestReporter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestReporter.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestReporter.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestReporter.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestReporter.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestReporter.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestReporter.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.o.requires:
 
@@ -179,16 +179,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestResult.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestResult.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestResult.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestResult.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestResult.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestResult.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/DeferredTestResult.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.o.requires:
 
@@ -203,16 +203,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/MemoryOutStream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/MemoryOutStream.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/MemoryOutStream.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/MemoryOutStream.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/MemoryOutStream.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/MemoryOutStream.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/MemoryOutStream.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.o.requires:
 
@@ -227,16 +227,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/ReportAssert.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/ReportAssert.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/ReportAssert.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/ReportAssert.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/ReportAssert.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/ReportAssert.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/ReportAssert.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.o.requires:
 
@@ -251,16 +251,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Test.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Test.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Test.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Test.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Test.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Test.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.o.requires:
 
@@ -275,16 +275,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/TestDetails.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestDetails.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestDetails.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestDetails.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestDetails.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestDetails.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestDetails.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.o.requires:
 
@@ -299,16 +299,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/TestList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestList.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestList.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestList.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestList.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestList.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestList.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.o.requires:
 
@@ -323,16 +323,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/TestReporter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporter.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporter.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporter.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporter.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporter.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporter.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.o.requires:
 
@@ -347,16 +347,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/TestReporterStdout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporterStdout.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporterStdout.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporterStdout.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporterStdout.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporterStdout.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestReporterStdout.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.o.requires:
 
@@ -371,16 +371,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/TestResults.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestResults.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestResults.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestResults.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestResults.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestResults.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestResults.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.o.requires:
 
@@ -395,16 +395,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/TestRunner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestRunner.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestRunner.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestRunner.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestRunner.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestRunner.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TestRunner.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.o.requires:
 
@@ -419,16 +419,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/TimeConstraint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TimeConstraint.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TimeConstraint.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TimeConstraint.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TimeConstraint.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TimeConstraint.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/TimeConstraint.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.o.requires:
 
@@ -443,16 +443,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/XmlTestReporter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/XmlTestReporter.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/XmlTestReporter.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/XmlTestReporter.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/XmlTestReporter.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/XmlTestReporter.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/XmlTestReporter.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.o.requires:
 
@@ -467,16 +467,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/Posix/SignalTranslator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/SignalTranslator.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/SignalTranslator.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/SignalTranslator.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/SignalTranslator.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/SignalTranslator.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/SignalTranslator.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/SignalTranslator.cpp.o.requires:
 
@@ -491,16 +491,16 @@ include .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.o: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/flags.make
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.o: ../.eecs211/lib/unittest-cpp/UnitTest++/Posix/TimeHelpers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/TimeHelpers.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/TimeHelpers.cpp"
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/TimeHelpers.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/TimeHelpers.cpp" > CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.i
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/TimeHelpers.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp/UnitTest++/Posix/TimeHelpers.cpp" -o CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.s
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.o.requires:
 
@@ -559,9 +559,9 @@ UnitTest_______EXTERNAL_OBJECTS =
 .eecs211/lib/unittest-cpp/libUnitTest++.a: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Posix/TimeHelpers.cpp.o
 .eecs211/lib/unittest-cpp/libUnitTest++.a: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/build.make
 .eecs211/lib/unittest-cpp/libUnitTest++.a: .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX static library libUnitTest++.a"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && $(CMAKE_COMMAND) -P CMakeFiles/UnitTest++.dir/cmake_clean_target.cmake
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/UnitTest++.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX static library libUnitTest++.a"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && $(CMAKE_COMMAND) -P CMakeFiles/UnitTest++.dir/cmake_clean_target.cmake
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/UnitTest++.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/build: .eecs211/lib/unittest-cpp/libUnitTest++.a
@@ -591,10 +591,10 @@ UnitTest_______EXTERNAL_OBJECTS =
 .PHONY : .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/requires
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/clean:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && $(CMAKE_COMMAND) -P CMakeFiles/UnitTest++.dir/cmake_clean.cmake
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" && $(CMAKE_COMMAND) -P CMakeFiles/UnitTest++.dir/cmake_clean.cmake
 .PHONY : .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/clean
 
 .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/depend:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : .eecs211/lib/unittest-cpp/CMakeFiles/UnitTest++.dir/depend
 

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8"
+CMAKE_SOURCE_DIR = "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include .eecs211/lib/graphics/CMakeFiles/graphics.dir/depend.make
@@ -59,16 +59,16 @@ include .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.o: .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.o: ../.eecs211/lib/graphics/raster/bmp_header.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/raster/bmp_header.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/bmp_header.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/raster/bmp_header.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/bmp_header.cpp"
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/raster/bmp_header.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/bmp_header.cpp" > CMakeFiles/graphics.dir/raster/bmp_header.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/bmp_header.cpp" > CMakeFiles/graphics.dir/raster/bmp_header.cpp.i
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/raster/bmp_header.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/bmp_header.cpp" -o CMakeFiles/graphics.dir/raster/bmp_header.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/bmp_header.cpp" -o CMakeFiles/graphics.dir/raster/bmp_header.cpp.s
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.o.requires:
 
@@ -83,16 +83,16 @@ include .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.o: .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.o: ../.eecs211/lib/graphics/raster/color32.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/raster/color32.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/color32.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/raster/color32.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/color32.cpp"
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/raster/color32.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/color32.cpp" > CMakeFiles/graphics.dir/raster/color32.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/color32.cpp" > CMakeFiles/graphics.dir/raster/color32.cpp.i
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/raster/color32.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/color32.cpp" -o CMakeFiles/graphics.dir/raster/color32.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/color32.cpp" -o CMakeFiles/graphics.dir/raster/color32.cpp.s
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.o.requires:
 
@@ -107,16 +107,16 @@ include .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.o: .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.o: ../.eecs211/lib/graphics/raster/raster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/raster/raster.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/raster.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/raster/raster.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/raster.cpp"
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/raster/raster.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/raster.cpp" > CMakeFiles/graphics.dir/raster/raster.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/raster.cpp" > CMakeFiles/graphics.dir/raster/raster.cpp.i
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/raster/raster.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/raster.cpp" -o CMakeFiles/graphics.dir/raster/raster.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/raster.cpp" -o CMakeFiles/graphics.dir/raster/raster.cpp.s
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.o.requires:
 
@@ -131,16 +131,16 @@ include .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.o: .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.o: ../.eecs211/lib/graphics/color_blender.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/color_blender.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/color_blender.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/color_blender.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/color_blender.cpp"
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/color_blender.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/color_blender.cpp" > CMakeFiles/graphics.dir/color_blender.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/color_blender.cpp" > CMakeFiles/graphics.dir/color_blender.cpp.i
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/color_blender.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/color_blender.cpp" -o CMakeFiles/graphics.dir/color_blender.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/color_blender.cpp" -o CMakeFiles/graphics.dir/color_blender.cpp.s
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.o.requires:
 
@@ -155,16 +155,16 @@ include .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o: .eecs211/lib/graphics/CMakeFiles/graphics.dir/flags.make
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o: ../.eecs211/lib/graphics/color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/color.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/color.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/color.cpp.o -c "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/color.cpp"
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/color.cpp.i"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/color.cpp" > CMakeFiles/graphics.dir/color.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/color.cpp" > CMakeFiles/graphics.dir/color.cpp.i
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/color.cpp.s"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/color.cpp" -o CMakeFiles/graphics.dir/color.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/color.cpp" -o CMakeFiles/graphics.dir/color.cpp.s
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o.requires:
 
@@ -195,9 +195,9 @@ graphics_EXTERNAL_OBJECTS =
 .eecs211/lib/graphics/libgraphics.a: .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o
 .eecs211/lib/graphics/libgraphics.a: .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make
 .eecs211/lib/graphics/libgraphics.a: .eecs211/lib/graphics/CMakeFiles/graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libgraphics.a"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && $(CMAKE_COMMAND) -P CMakeFiles/graphics.dir/cmake_clean_target.cmake
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libgraphics.a"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && $(CMAKE_COMMAND) -P CMakeFiles/graphics.dir/cmake_clean_target.cmake
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/build: .eecs211/lib/graphics/libgraphics.a
@@ -213,10 +213,10 @@ graphics_EXTERNAL_OBJECTS =
 .PHONY : .eecs211/lib/graphics/CMakeFiles/graphics.dir/requires
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/clean:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && $(CMAKE_COMMAND) -P CMakeFiles/graphics.dir/cmake_clean.cmake
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" && $(CMAKE_COMMAND) -P CMakeFiles/graphics.dir/cmake_clean.cmake
 .PHONY : .eecs211/lib/graphics/CMakeFiles/graphics.dir/clean
 
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/depend:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : .eecs211/lib/graphics/CMakeFiles/graphics.dir/depend
 

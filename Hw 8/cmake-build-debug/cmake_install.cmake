@@ -1,4 +1,4 @@
-# Install script for directory: /Users/michaelhsu/Documents/Github/EECS 211/Hw 8
+# Install script for directory: /Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,8 +29,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp/cmake_install.cmake")
-  include("/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics/cmake_install.cmake")
+  include("/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/unittest-cpp/cmake_install.cmake")
+  include("/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics/cmake_install.cmake")
 
 endif()
 
@@ -42,5 +42,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

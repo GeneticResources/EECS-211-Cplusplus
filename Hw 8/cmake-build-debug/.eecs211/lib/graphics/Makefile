@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8"
+CMAKE_SOURCE_DIR = "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/progress.marks"
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/CMakeFiles" 0
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/progress.marks"
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/clean
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/preinstall
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/preinstall
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 .eecs211/lib/graphics/CMakeFiles/graphics.dir/rule:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/CMakeFiles/graphics.dir/rule
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 .eecs211/lib/graphics/CMakeFiles/graphics.dir/rule
 .PHONY : .eecs211/lib/graphics/CMakeFiles/graphics.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ graphics: .eecs211/lib/graphics/CMakeFiles/graphics.dir/rule
 
 # fast build rule for target.
 graphics/fast:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/build
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/build
 .PHONY : graphics/fast
 
 color.o: color.cpp.o
@@ -142,7 +142,7 @@ color.o: color.cpp.o
 
 # target to build an object file
 color.cpp.o:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o
 .PHONY : color.cpp.o
 
 color.i: color.cpp.i
@@ -151,7 +151,7 @@ color.i: color.cpp.i
 
 # target to preprocess a source file
 color.cpp.i:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.i
 .PHONY : color.cpp.i
 
 color.s: color.cpp.s
@@ -160,7 +160,7 @@ color.s: color.cpp.s
 
 # target to generate assembly for a file
 color.cpp.s:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.s
 .PHONY : color.cpp.s
 
 color_blender.o: color_blender.cpp.o
@@ -169,7 +169,7 @@ color_blender.o: color_blender.cpp.o
 
 # target to build an object file
 color_blender.cpp.o:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.o
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.o
 .PHONY : color_blender.cpp.o
 
 color_blender.i: color_blender.cpp.i
@@ -178,7 +178,7 @@ color_blender.i: color_blender.cpp.i
 
 # target to preprocess a source file
 color_blender.cpp.i:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.i
 .PHONY : color_blender.cpp.i
 
 color_blender.s: color_blender.cpp.s
@@ -187,7 +187,7 @@ color_blender.s: color_blender.cpp.s
 
 # target to generate assembly for a file
 color_blender.cpp.s:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.s
 .PHONY : color_blender.cpp.s
 
 raster/bmp_header.o: raster/bmp_header.cpp.o
@@ -196,7 +196,7 @@ raster/bmp_header.o: raster/bmp_header.cpp.o
 
 # target to build an object file
 raster/bmp_header.cpp.o:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.o
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.o
 .PHONY : raster/bmp_header.cpp.o
 
 raster/bmp_header.i: raster/bmp_header.cpp.i
@@ -205,7 +205,7 @@ raster/bmp_header.i: raster/bmp_header.cpp.i
 
 # target to preprocess a source file
 raster/bmp_header.cpp.i:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.i
 .PHONY : raster/bmp_header.cpp.i
 
 raster/bmp_header.s: raster/bmp_header.cpp.s
@@ -214,7 +214,7 @@ raster/bmp_header.s: raster/bmp_header.cpp.s
 
 # target to generate assembly for a file
 raster/bmp_header.cpp.s:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.s
 .PHONY : raster/bmp_header.cpp.s
 
 raster/color32.o: raster/color32.cpp.o
@@ -223,7 +223,7 @@ raster/color32.o: raster/color32.cpp.o
 
 # target to build an object file
 raster/color32.cpp.o:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.o
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.o
 .PHONY : raster/color32.cpp.o
 
 raster/color32.i: raster/color32.cpp.i
@@ -232,7 +232,7 @@ raster/color32.i: raster/color32.cpp.i
 
 # target to preprocess a source file
 raster/color32.cpp.i:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.i
 .PHONY : raster/color32.cpp.i
 
 raster/color32.s: raster/color32.cpp.s
@@ -241,7 +241,7 @@ raster/color32.s: raster/color32.cpp.s
 
 # target to generate assembly for a file
 raster/color32.cpp.s:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.s
 .PHONY : raster/color32.cpp.s
 
 raster/raster.o: raster/raster.cpp.o
@@ -250,7 +250,7 @@ raster/raster.o: raster/raster.cpp.o
 
 # target to build an object file
 raster/raster.cpp.o:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.o
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.o
 .PHONY : raster/raster.cpp.o
 
 raster/raster.i: raster/raster.cpp.i
@@ -259,7 +259,7 @@ raster/raster.i: raster/raster.cpp.i
 
 # target to preprocess a source file
 raster/raster.cpp.i:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.i
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.i
 .PHONY : raster/raster.cpp.i
 
 raster/raster.s: raster/raster.cpp.s
@@ -268,7 +268,7 @@ raster/raster.s: raster/raster.cpp.s
 
 # target to generate assembly for a file
 raster/raster.cpp.s:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.s
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(MAKE) -f .eecs211/lib/graphics/CMakeFiles/graphics.dir/build.make .eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.s
 .PHONY : raster/raster.cpp.s
 
 # Help Target
@@ -307,6 +307,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

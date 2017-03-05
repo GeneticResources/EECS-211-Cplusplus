@@ -1,4 +1,4 @@
-# Install script for directory: /Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/unittest-cpp
+# Install script for directory: /Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/unittest-cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

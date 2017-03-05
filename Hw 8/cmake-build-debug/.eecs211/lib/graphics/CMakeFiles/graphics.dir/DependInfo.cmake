@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/color.cpp" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o"
-  "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/color_blender.cpp" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.o"
-  "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/bmp_header.cpp" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.o"
-  "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/color32.cpp" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.o"
-  "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/.eecs211/lib/graphics/raster/raster.cpp" "/Users/michaelhsu/Documents/Github/EECS 211/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.o"
+  "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/color.cpp" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/color.cpp.o"
+  "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/color_blender.cpp" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/color_blender.cpp.o"
+  "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/bmp_header.cpp" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/bmp_header.cpp.o"
+  "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/color32.cpp" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/color32.cpp.o"
+  "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/.eecs211/lib/graphics/raster/raster.cpp" "/Users/michaelhsu/Documents/Github/EECS-211-Cplusplus/Hw 8/cmake-build-debug/.eecs211/lib/graphics/CMakeFiles/graphics.dir/raster/raster.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
