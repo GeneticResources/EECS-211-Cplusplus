@@ -194,7 +194,7 @@ size_t Server::send()
                     foundMachine = true;
                     List head = pop_front(data_list_);
 
-                    // If buffer is full, then don't send
+                    // If buffer is full, then don't send (only for Laptop)
                     try {
                         node_list_[i]->receive(head->data);
                     } catch (err_code e){

@@ -29,11 +29,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="machines.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="machines.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/machines.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="74" column="33" lean-forward="true" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+            <state relative-caret-position="270">
+              <caret line="196" column="75" lean-forward="false" selection-start-line="196" selection-start-column="75" selection-end-line="196" selection-end-column="75" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="networksim_test.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="networksim_test.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/networksim_test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="87" column="78" lean-forward="true" selection-start-line="87" selection-start-column="78" selection-end-line="87" selection-end-column="78" />
+            <state relative-caret-position="270">
+              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/linked_lib.cpp" />
         <option value="$PROJECT_DIR$/datagram.cpp" />
         <option value="$PROJECT_DIR$/system.cpp" />
-        <option value="$PROJECT_DIR$/machines.cpp" />
         <option value="$PROJECT_DIR$/networksim_test.cpp" />
+        <option value="$PROJECT_DIR$/machines.cpp" />
       </list>
     </option>
   </component>
@@ -355,12 +355,12 @@
       <workItem from="1488569261744" duration="16394000" />
       <workItem from="1488680244932" duration="822000" />
       <workItem from="1488683098806" duration="248000" />
-      <workItem from="1488683715940" duration="2026000" />
+      <workItem from="1488683715940" duration="2246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33803000" />
+    <option name="totallyTimeSpent" value="34023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="817" extended-state="6" />
@@ -547,21 +547,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machines.cpp">
+    <entry file="file://$PROJECT_DIR$/networksim_test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="74" column="33" lean-forward="true" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/networksim_test.cpp">
+    <entry file="file://$PROJECT_DIR$/machines.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="87" column="78" lean-forward="true" selection-start-line="87" selection-start-column="78" selection-end-line="87" selection-end-column="78" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="196" column="75" lean-forward="false" selection-start-line="196" selection-start-column="75" selection-end-line="196" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
