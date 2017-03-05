@@ -85,6 +85,7 @@ TEST(SYSTEM) {
     CHECK_THROW_ENUM(sys.release_datagram(IP_address("255.255.255.255")), err_code, no_such_machine);
     CHECK_THROW_ENUM(sys.allocate_datagram(IP_address("100.100.100.100"), IP_address("4.4.4.4"), "yo"), err_code, no_such_machine);
     CHECK_THROW_ENUM(sys.release_datagram(IP_address("100.100.100.100")), err_code, no_such_machine);
+    sys.allocate_datagram(IP_address("1.1.1.1"), IP_address("2.2.2.2"), "hi");
 
     // Server
     CHECK_THROW_ENUM(sys.connect_machine(IP_address("11.11.11.11"), IP_address("150.150.150.150")), err_code, connect_failed);
