@@ -64,7 +64,7 @@ void Laptop::receive(Datagram* d)
 {
     if(incoming_ != nullptr || !(d->get_destination() == get_ip()))
         throw err_code :: recv_blocked;
-    if(d->get_destination() == get_ip())
+    if(d->get_destination() == get_ip() && incoming_ == nullptr)
         incoming_ = d;
 }
 
@@ -242,12 +242,7 @@ size_t Server::send()
                 List head = pop_front(data_list_);
 
                 // Send datagram to minimum octad difference
-                try {
-                    node_list_[minIndex]->receive(head->data);
-                } catch (err_code e){
-                    push_back(failedSend, head->data);
-                    continue;
-                }
+                node_list_[minIndex]->receive(head->data);
 
                 head->data = nullptr;
                 ++success;
