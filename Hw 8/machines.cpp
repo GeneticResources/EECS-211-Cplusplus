@@ -76,7 +76,7 @@ void Laptop::allocate_datagram(const IP_address& dst,
                                const string& message)
 {
     if(outgoing_ != nullptr)
-        err_code :: send_blocked;
+        throw err_code :: send_blocked;
     else
         outgoing_ = new Datagram(get_ip(), dst, message);
 }
