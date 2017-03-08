@@ -46,7 +46,8 @@ void Laptop::connect(const shared_ptr<Node>& x)
 
 void Laptop::disconnect(const shared_ptr<Node>& x)
 {
-    server_ = nullptr;
+    if(x == server_)
+        server_ = nullptr;
 }
 
 size_t Laptop::send()
