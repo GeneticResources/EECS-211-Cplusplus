@@ -53,6 +53,9 @@ size_t Laptop::send()
 {
     size_t success = 0;
 
+    if(server_ == nullptr)
+        return success;
+
     server_->receive(outgoing_);
 
     outgoing_ = nullptr;
